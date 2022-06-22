@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { resolve } from 'path';
 import { exec, getAWSAccounts, getLocalGitBranch, ROOT_DIR } from '../lib';
 import { CloudFormation, config, SharedIniFileCredentials } from 'aws-sdk';

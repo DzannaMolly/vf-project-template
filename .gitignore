@@ -137,4 +137,7 @@ $RECYCLE.BIN/
 .aws-sam/
 samconfig.toml
 
+# VSCode settings
+.vscode/
+
 # End of https://www.gitignore.io/api/osx,node,linux,windows

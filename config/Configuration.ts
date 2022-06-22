@@ -2,9 +2,6 @@
 //this helps create unified a central config file for all packages in the monorepo.
 import { VoiceMailProps } from '@ttec-dig-vf/connect-voicemail';
 import { AdminStackProps } from '@ttec-dig-vf/vf-connect-admin';
-import { ConnectCoreProps } from '../packages/connect-core/stacks/ConnectCore';
-import { ConnectLambdasProps } from '../packages/connect-lambdas/stacks/ConnectLambdas';
-
 /**
  * Repository Configuration
  */
@@ -76,7 +73,9 @@ export interface Configuration {
   /**
    * If 'connect-core' present in the packages folder, supports configuration for the connect instance and associated resources
    */
-  connectCore: Omit<ConnectCoreProps, 'prefix' | 'env'>;
+  connectCore: {
+    instanceAlias: "contosoanafortest"
+  };
   /**
    * If 'connect-lambdas' present in the packages folder, supports configuration for custom lambdas associated with the connect instance
    */

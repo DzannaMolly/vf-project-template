@@ -1,4 +1,0 @@
-{
-  "app": "npm run ts --prefer-ts-exts infra.ts",
-  "context": {}
-}

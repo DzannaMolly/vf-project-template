@@ -60,7 +60,6 @@
   },
   "workspaces": [
     "packages/cicd",
-    "packages/connect-core",
     "packages/connect-lambdas",
     "packages/admin",
     "packages/voicemail"

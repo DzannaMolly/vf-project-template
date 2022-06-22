@@ -5,19 +5,19 @@ const config: Configuration = {
   project: 'project-name',
   repo: {
     host: 'GitHub',
-    name: 'repo-name',
-    owner: 'TTEC-Dig-VF',
-    oauthSecretName: 'secret-name' //from Secrets Manager
+    name: 'vf-project-template',
+    owner: 'DzannaMolly',
+    oauthSecretName: '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' //from Secrets Manager
   },
   account: {
-    profile: 'aws-profile',
-    region: 'xx-xxxx-x',
-    id: '000000000000'
+    profile: 'default',
+    region: 'us-east-1',
+    id: '157164668893'
   },
   //see https://github.com/TTEC-Dig-VF/vf-project-template#removing-connect-core
   //if connecting to an existing Connect Instance
   connectCore: {
-    instanceAlias: 'instance-name'
+    instanceAlias: 'contosoanafortest'
   },
   //optional packages:
   //see https://github.com/TTEC-Dig-VF/vf-project-template/blob/main/docs/packages.md#how-to-add-a-package

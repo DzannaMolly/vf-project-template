@@ -74,7 +74,7 @@ export interface Configuration {
    * If 'connect-core' present in the packages folder, supports configuration for the connect instance and associated resources
    */
   connectCore: {
-    instanceAlias: "contosoanafortest"
+    instanceAlias: string;
   };
   /**
    * If 'connect-lambdas' present in the packages folder, supports configuration for custom lambdas associated with the connect instance

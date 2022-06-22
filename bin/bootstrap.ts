@@ -12,10 +12,10 @@ async function checkReadyState() {
   if (!(branch === 'master' || branch === 'main')) {
     throw new Error('must be on master/main branch to bootstrap repo');
   }
-  const response = await exec('git status -s', false);
-  if (response.length) {
-    throw new Error('git status must be clean to run bootstrap command. commit changes and rerun bootstrap');
-  }
+  // const response = await exec('git status -s', false);
+  // if (response.length) {
+  //   throw new Error('git status must be clean to run bootstrap command. commit changes and rerun bootstrap');
+  // }
 }
 
 async function commitPackageLocks() {

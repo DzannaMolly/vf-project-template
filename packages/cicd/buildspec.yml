@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - node --version
+      - npm install -g npm@8
+      - npm --version
+      - chmod +x ./bin/loginToCodeArtifact.sh
+      - ./bin/loginToCodeArtifact.sh --account $CA_ACCOUNT --region $CA_REGION
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run ts packages/cicd/buildChangedPackages
+  post_build:
+    commands:
+      - echo Build completed on `date`

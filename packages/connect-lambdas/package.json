@@ -1,0 +1,16 @@
+{
+  "name": "@vf-project-template/vf-connect-resources",
+  "version": "0.1.0",
+  "scripts": {
+    "node": "node",
+    "ts": "npm run node -- -r ts-node/register",
+    "cdk": "cdk",
+    "build": "npm run tsc",
+    "tsc": "cross-env-shell \"../../node_modules/.bin/tsc --project tsconfig.build.json\"",
+    "sync-prod-deps": "npm run ts bin/syncProdDeps",
+    "synth": "npm run ts ../../bin/synth",
+    "deploy": "npm run ts ../../bin/deploy",
+    "destroy": "npm run ts ../../bin/destroy",
+    "test": "jest ./src/**/**/*.spec.ts --coverage"
+  }
+}

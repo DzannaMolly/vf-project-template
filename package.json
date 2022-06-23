@@ -26,8 +26,8 @@
     "@aws-sdk/signature-v4-crt": "^3.39.0",
     "@aws-sdk/util-dynamodb": "^3.39.0",
     "@shelf/jest-dynamodb": "^2.1.0",
-    "@ttec-dig-vf/cdk-resources": "^7.2.1",
-    "@ttec-dig-vf/vf-logger": "^0.1.6",
+    "@ttec-dig-vf/cdk-resources": "file:packs/ttec-dig-vf-cdk-resources-7.2.1.tgz",
+    "@ttec-dig-vf/vf-logger": "file:packs/ttec-dig-vf-vf-logger-0.1.6.tgz",
     "@types/aws-lambda": "^8.10.84",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.6",
@@ -54,7 +54,7 @@
   },
   "engineStrict": true,
   "engines": {
-    "node": "14",
+    "node": ">=14",
     "npm": ">=7.0.0",
     "git": ">=2.2.3"
   },
@@ -63,5 +63,9 @@
     "packages/connect-lambdas",
     "packages/admin",
     "packages/voicemail"
-  ]
+  ],
+  "dependencies": {
+    "@ttec-dig-vf/connect-voicemail": "file:packs/ttec-dig-vf-connect-voicemail-4.0.2.tgz",
+    "@ttec-dig-vf/vf-connect-admin": "file:packs/ttec-dig-vf-vf-connect-admin-4.0.2.tgz"
+  }
 }
